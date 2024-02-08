@@ -17,7 +17,12 @@ const About = () => {
             <div className="w-2 h-2 rounded-full bg-zinc-100"></div>
           </button>
         </div>
-        <div className="w-1/2 h-[70vh] rounded-3xl bg-[#99AD52]"></div>
+        <div
+          // style={{
+          //   backgroundImage: `url('https://images.unsplash.com/photo-1522071901873-411886a10004?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          // }}
+          className="w-1/2 h-[70vh] bg-c rounded-3xl bg-[#99AD52]"
+        ></div>
       </div>
     </div>
   );
