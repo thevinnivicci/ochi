@@ -18,9 +18,6 @@ const Eyes = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <div
-        data-scroll
-        data-scroll-section
-        data-scroll-speed="-.7"
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')`,
