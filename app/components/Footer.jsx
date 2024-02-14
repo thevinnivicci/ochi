@@ -3,17 +3,18 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full h-screen flex gap-5 text-white p-20 bg-zinc-900">
-      <div className="w-1/2 h-full flex flex-col justify-between">
+    <div className="w-full h-screen flex flex-col lg:flex-row lg:gap-5 text-white p-5 pt-20 lg:p-20 bg-zinc-900">
+      <div className="lg:w-1/2 w-full lg:h-full flex flex-col justify-between">
         <div className="heading">
-          <h1 className="text-[8vw] uppercase leading-none tracking-tighter font-semibold">
+          <h1 className="lg:text-[8vw] text-[10vw] uppercase leading-none tracking-tighter font-semibold">
             EYE
           </h1>
-          <h1 className="text-[8vw] uppercase leading-none tracking-tighter font-semibold">
+          <h1 className="lg:text-[8vw] text-[10vw] uppercase leading-none tracking-tighter font-semibold">
             OPENING
           </h1>
         </div>
         <svg
+          className="hidden lg:flex"
           width="72"
           height="30"
           viewBox="0 0 72 30"
@@ -42,8 +43,8 @@ const Footer = () => {
           ></path>
         </svg>
       </div>
-      <div className="w-1/2">
-        <h1 className="text-[6vw] uppercase leading-none tracking-tighter font-semibold">
+      <div className="lg:w-1/2 w-full">
+        <h1 className="lg:text-[6vw] text-[10vw] uppercase leading-none tracking-tighter font-semibold">
           presentation
         </h1>
         <div className="dets font-['Neue Montreal']">

@@ -16,16 +16,16 @@ const Eyes = () => {
     });
   });
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[80vh] lg:h-screen overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 lg:bg-cover bg-center"
         style={{
           backgroundImage: `url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')`,
         }}
       >
         <div className="flex justify-center items-center w-full h-full">
-          <div className="w-1/2 h-1/2 gap-5 flex justify-center items-center max-w-screen-sm ">
-            <div className=" flex items-center justify-center w-[10vw] h-[20vh] rounded-[100%] bg-zinc-100">
+          <div className="lg:w-1/2 h-1/2 w-full gap-5 flex justify-center items-center max-w-screen-sm ">
+            <div className=" flex items-center justify-center w-28 h-28 lg:w-[10vw] lg:h-[20vh] rounded-[100%] bg-zinc-100">
               <div className="relative w-2/3 h-2/3 bg-zinc-900 rounded-full">
                 <div
                   style={{
@@ -37,7 +37,7 @@ const Eyes = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex items-center justify-center w-[10vw] h-[20vh] rounded-[100%] bg-zinc-100">
+            <div className=" flex items-center justify-center w-28 h-28 lg:w-[10vw] lg:h-[20vh] rounded-[100%] bg-zinc-100">
               <div className="relative w-2/3 h-2/3 bg-zinc-900 rounded-full">
                 <div
                   style={{

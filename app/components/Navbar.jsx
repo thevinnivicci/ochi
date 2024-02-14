@@ -1,9 +1,20 @@
+import Image from "next/image";
+import logo from "../../public/logo.png";
 const Navbar = () => {
+  const lists = [{ name: "Service", link: "/about" }];
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 font-['Neue Montreal'] flex justify-between items-center">
+    <div className="sticky bg-[#F1F1F1] border-b border-zinc-800 z-[999] w-full px-20 py-6 font-['Neue Montreal'] flex justify-between items-center">
       {/* logo */}
       <div className="">
-        <svg
+        <Image
+          className="cursor-pointer select-none"
+          src={logo}
+          alt="logo"
+          width={80}
+          height={80}
+        />
+
+        {/* <svg
           width="72"
           height="30"
           viewBox="0 0 72 30"
@@ -30,15 +41,18 @@ const Navbar = () => {
             d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z"
             fill="currentColor"
           ></path>
-        </svg>
+        </svg> */}
       </div>
       {/* links */}
-      <div className="flex gap-10">
+      <div className="sm:flex hidden gap-10">
         {["Service", "Our work", "About us", "Insights", "Contact"].map(
           (item, id) => (
             <a
               key={id}
-              className={`text-md capitalize font-light ${id === 4 && "ml-32"}`}
+              className={`text-md hover:underline transition-all capitalize font-light ${
+                id === 4 &&
+                "ml-32 hover:bg-black hover:no-underline hover:text-white transition-all px-5 py-2 border border-zinc-800 font-light text-sm uppercase rounded-full"
+              }`}
             >
               {item}
             </a>

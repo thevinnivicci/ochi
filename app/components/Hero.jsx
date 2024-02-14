@@ -1,17 +1,12 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { FaArrowUpLong } from "react-icons/fa6";
+import Companies from "./Companies";
 const Hero = () => {
   return (
-    <div
-      data-scroll
-      data-scroll-speed="-.3"
-      className="w-full h-screen bg-[#f1f1f1] pt-1"
-    >
+    <div className="w-full lg:h-full sm:h-[70vh] bg-[#f1f1f1] pt-1">
       {/* text structure */}
-      <div className="mt-52 px-20">
+      <div className="w-full mt-20 px-8 lg:px-20">
         {["we create", "eye opening", "presentation"].map((item, id) => (
-          <div key={id} className="masker ">
+          <div key={id} className="masker w-fit">
             <div className="w-fit flex items-end overflow-hidden">
               {id === 1 && (
                 <motion.div
@@ -37,7 +32,7 @@ const Hero = () => {
                   /> */}
                 </motion.div>
               )}
-              <h1 className="leading-[6.5vw] tracking-tighter uppercase text-[7vw] font-medium">
+              <h1 className="lg:leading-[6.5vw] leading-[10vw] tracking-tighter uppercase text-[10vw] lg:text-[7vw] font-medium">
                 {item}
               </h1>
             </div>
@@ -45,30 +40,8 @@ const Hero = () => {
         ))}
       </div>
       {/*companies  */}
-      <div className="border-t mt-32 border-zinc-800 flex justify-between items-center py-5 px-20">
-        {[
-          "For public and private companies",
-          "From the first pitch to IPO",
-        ].map((item, id) => (
-          <p
-            key={id}
-            className="text-base capitalize tracking-tight leading-none"
-          >
-            {item}
-          </p>
-        ))}
-        <div className=" flex items-center gap-5">
-          <div className=" hover:bg-black hover:text-white transition-all px-5 py-2 border border-zinc-400 font-light text-sm uppercase rounded-full">
-            start the project
-          </div>
-          <div
-            className="w-10 border hover:bg-black hover:text-white transition-all border-zinc-400 h-10 flex items-center justify-center rounded-full
-           rotate-45"
-          >
-            <FaArrowUpLong />
-          </div>
-        </div>
-      </div>
+      <Companies />
+
       {/* start button */}
     </div>
   );
