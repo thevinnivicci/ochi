@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import About from "./components/About";
 import AboutCards from "./components/AboutCards";
-import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -16,7 +15,6 @@ export default function Home() {
       <Hero />
       <Marquee />
       <About />
-      <Eyes />
       <Featured />
       <AboutCards />
       <Footer />

@@ -1,18 +1,27 @@
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import Link from "next/link";
 const Navbar = () => {
   const lists = [{ name: "Service", link: "/about" }];
+  const Navlist = [
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Skills", link: "#Skills" },
+    { name: "Contact", link: "#contact" },
+  ];
   return (
-    <div className="sticky bg-[#F1F1F1] border-b border-zinc-800 z-[999] w-full px-20 py-6 font-['Neue Montreal'] flex justify-between items-center">
+    <div className="sticky bg-[#F1F1F1] border-b border-zinc-800 z-[999] w-full px-5 lg:px-20 py-6 font-['Neue Montreal'] flex justify-between items-center">
       {/* logo */}
       <div className="">
-        <Image
-          className="cursor-pointer select-none"
-          src={logo}
-          alt="logo"
-          width={80}
-          height={80}
-        />
+        <Link href={"/"}>
+          <Image
+            className="cursor-pointer w-14 select-none"
+            src={logo}
+            alt="logo"
+            width={500}
+            height={500}
+          />
+        </Link>
 
         {/* <svg
           width="72"
@@ -45,19 +54,18 @@ const Navbar = () => {
       </div>
       {/* links */}
       <div className="sm:flex hidden gap-10">
-        {["Service", "Our work", "About us", "Insights", "Contact"].map(
-          (item, id) => (
-            <a
-              key={id}
-              className={`text-md hover:underline transition-all capitalize font-light ${
-                id === 4 &&
-                "ml-32 hover:bg-black hover:no-underline hover:text-white transition-all px-5 py-2 border border-zinc-800 font-light text-sm uppercase rounded-full"
-              }`}
-            >
-              {item}
-            </a>
-          )
-        )}
+        {Navlist.map((item, id) => (
+          <Link
+            href={item.link}
+            key={id}
+            className={`text-md hover:underline transition-all capitalize font-light ${
+              id === 3 &&
+              "ml-32 hover:bg-black hover:no-underline hover:text-white transition-all px-5 py-2 border border-zinc-800 font-light text-sm uppercase rounded-full"
+            }`}
+          >
+            {item.name}
+          </Link>
+        ))}
       </div>
     </div>
   );

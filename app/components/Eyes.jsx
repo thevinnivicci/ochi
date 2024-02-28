@@ -20,7 +20,7 @@ const Eyes = () => {
       <div
         className="absolute inset-0 lg:bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-scaled.jpg')`,
+          backgroundImage: `url('/eyebgsmall.jpg')`,
         }}
       >
         <div className="flex justify-center items-center w-full h-full">

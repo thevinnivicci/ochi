@@ -1,4 +1,5 @@
 import React from "react";
+import Eyes from "./Eyes";
 
 const About = () => {
   return (
@@ -6,10 +7,11 @@ const About = () => {
       id="about"
       className="w-full p-8 lg:p-20 rounded-tl-3xl text-black rounded-tr-3xl bg-[#CDEA68]"
     >
-      <h1 className="font-['Neue_Montreal'] leading-[6vw] text-[6vw] lg:text-[4vw] tracking-tight  lg:leading-[4.5vw]">
-        Ochi is a strategic partner for fast-grow­ing tech businesses that need
-        to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great
-        peo­ple.
+      <h1 className="font-['Neue_Montreal'] leading-[7vw] text-[5vw] lg:text-[3vw] tracking-tight  lg:leading-[3.5vw]">
+        Passionate Front-End Maestro with a flair for crafting immersive and
+        intuitive web experiences. Proficient in HTML, CSS, JavaScript, React,
+        and Tailwind, complemented by a solid grasp of Node.js, MongoDB, and
+        Express.
       </h1>
       {/* about us */}
       <div className="w-full flex flex-col lg:flex-row gap-5 border-t pt-10 border-[#99AD52] mt-10 lg:mt-20">
@@ -26,9 +28,11 @@ const About = () => {
           // style={{
           //   backgroundImage: `url('https://images.unsplash.com/photo-1522071901873-411886a10004?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           // }}
-          className="lg:w-1/2 w-full h-[50vh] lg:h-[70vh] bg-[#99AD52] overflow-hidden p-5 rounded-3xl "
+          className="lg:w-1/2 w-full h-[50vh]  border-[#004d43] flex items-center justify-center lg:h-[70vh] overflow-hidden rounded-3xl "
           //
-        ></div>
+        >
+          <Eyes />
+        </div>
       </div>
     </div>
   );
